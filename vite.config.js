@@ -4,13 +4,8 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   test: {
-    environment: 'jsdom',
+    environment: 'happy-dom',
     globals: true,
     setupFiles: './src/__tests__/setup.js',
-    server: {
-      deps: {
-        inline: ['jsdom'],
-      },
-    },
   },
 })

@@ -11,15 +11,15 @@
     "preview": "vite preview",
     "server": "json-server --watch db.json --port 4000",
     "lint": "eslint .",
-    "pretest": "npm install jsdom --no-save",
     "test": "vitest run --reporter=junit --outputFile=./junit.xml",
     "test:watch": "vitest --watch"
-  },
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
     "@mui/material": "^6.5.0",
+    "happy-dom": "^12.10.3",
+    "jsdom": "^29.1.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.2"
@@ -44,7 +44,6 @@
     "globals": "^15.9.0",
     "jest": "^30.4.2",
     "jest-environment-jsdom": "^30.4.1",
-    "jsdom": "^29.1.1",
     "json-server": "^1.0.0-beta.2",
     "vite": "^5.4.1",
     "vitest": "^2.0.5",

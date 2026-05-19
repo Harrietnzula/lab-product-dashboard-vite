@@ -5,15 +5,12 @@ export default defineConfig({
   plugins: [react()],
   test: {
     environment: 'jsdom',
-    environmentOptions: {
-      jsdom: {
-        resources: 'usable',
-      },
-    },
     globals: true,
     setupFiles: './src/__tests__/setup.js',
-    deps: {
-      inline: ['jsdom'],
+    server: {
+      deps: {
+        inline: ['jsdom'],
+      },
     },
   },
 })
